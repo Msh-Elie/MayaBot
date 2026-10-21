@@ -40,12 +40,11 @@ users_confirmed = {}
 
 # === MESSAGE D'ACCUEIL ===
 WELCOME_MESSAGE = (
-    "Bienvenue sur mon canal !\n"
-    "Je suis Maya, tu dois surement me connaître pour mes nombreuses performances sportives 😏\n"
+    "Bienvenue sur mon Canal !\n"
+    "Je suis Maya, tu dois sûrement me connaître à travers mes réseaux, de surcroît mon TikTok 😏\n"
     "Je sais pourquoi tu es là, et tu y trouveras exactement ce que tu cherches d’ici quelques secondes 😉\n\n"
     "Sache que je suis très attentive et assez disponible pour faire connaissance et te faire découvrir de nombreuses choses 😁\n\n"
-    "Tu as mon insta juste ici 👉🏼 https://www.instagram.com/chloesxnchez\n\n"
-    "Avant d’accéder à mon canal privé, es-tu bien majeur ? 🔞\n\n"
+    "Avant d’accéder à mon canal privé, es-tu majeur ? 🔞\n\n"
 )
 
 # --- Fonction pour afficher le message principal après validation ---
@@ -53,16 +52,13 @@ async def show_main_menu(user_id, bot):
     """Montre le message principal et les liens après confirmation"""
     try:
         keyboard = [
-            [InlineKeyboardButton("👉 Accéder au canal privé 💋", url=CANAL_LINK10)],
-            [InlineKeyboardButton("Accès GRATUIT à mon intimité (7 places maximum) ⏳🌶", url=LINK)]
-        ]
+            [InlineKeyboardButton("👉 Accéder au canal privé 💋", url=CANAL_LINK10)]
 
         await bot.send_message(
             chat_id=user_id,
             text=(
                 "Tu peux maintenant rejoindre mon canal ! 😍\n\n"
-                "Je poste du contenu 🌶, mais pas plus que sur ma plateforme privée (GRATUITE) 🥵💦\n\n"
-                "Tous mes liens ici, écris moi, je vais te dévorer 🫦 ⤵"
+                "Je poste du contenu 🌶️, mais pas avec plus de précision qu’en DM. En B2B 😈"
             ),
             reply_markup=InlineKeyboardMarkup(keyboard)
         )
