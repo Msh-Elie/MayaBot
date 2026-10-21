@@ -53,6 +53,7 @@ async def show_main_menu(user_id, bot):
     try:
         keyboard = [
             [InlineKeyboardButton("👉 Accéder au canal privé 💋", url=CANAL_LINK10)]
+            ]
 
         await bot.send_message(
             chat_id=user_id,
